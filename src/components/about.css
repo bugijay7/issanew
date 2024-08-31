@@ -1,0 +1,122 @@
+.abt-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-heading  {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 20px auto;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: gainsboro;
+    height: fit-content;
+    padding: 10px;
+    width: 20%;
+    gap: 15px;
+}
+
+.card-title {
+    font-weight: 900;
+    color: black;
+}
+
+.image {
+    width: 100%;
+    height: 350px;
+}
+ .cards-text {
+    max-width: 90%;
+    font-size: 1rem;
+ }
+
+.card-box {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.page-links {
+    padding: 10px 20px;  
+    color: white;
+    background-color: black;
+}
+
+.page-links:hover {
+    color: black;
+    background-color: transparent;
+}
+@media (max-width: 768px) {
+    .abt-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .abt-heading  {
+        text-align: center;
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 20px auto;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: gainsboro;
+        height: fit-content;
+        padding: 5px;
+        width: 27%;
+        gap: 15px;
+    }
+    
+    .card-title {
+        font-weight: 900;
+        color: black;
+    }
+    
+    .image {
+        width: 100%;
+        height: 150px;
+    }
+     .cards-text {
+        max-width: 90%;
+        font-size: 0.5rem;
+     }
+     .card-title {
+        font-size: 0.7rem;
+     }
+    
+    .card-box {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .page-links {
+        padding: 2px 4px;  
+        color: white;
+        background-color: black;
+        font-size: 0.5rem;
+    }
+    
+    .page-links:hover {
+        color: black;
+        background-color: transparent;
+    }
+  }
