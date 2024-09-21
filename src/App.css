@@ -4,9 +4,17 @@
 }
 
 .app-container {
-    background-color: whitesmoke;
+    background-image: url(../src/assets/appback1.jpg);
+    background-size: cover;
 }
 h1 {
     color: black;
     font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        width: 100vw;
+        background-color: black;
+    }
 }

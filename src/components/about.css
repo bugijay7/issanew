@@ -1,3 +1,4 @@
+/* About Section Container */
 .abt-container {
     width: 100%;
     height: auto;
@@ -7,12 +8,15 @@
     align-items: center;
 }
 
-.abt-heading  {
+/* Heading */
+.abt-heading {
     text-align: center;
     font-weight: 900;
     font-size: 2rem;
     margin: 20px auto;
 }
+
+/* Card Styles */
 .cards {
     display: flex;
     flex-direction: column;
@@ -32,12 +36,15 @@
 .image {
     width: 100%;
     height: 350px;
+    object-fit: cover; /* Ensures images cover the area without distortion */
 }
- .cards-text {
+
+.cards-text {
     max-width: 90%;
     font-size: 1rem;
- }
+}
 
+/* Card Box Styles */
 .card-box {
     width: 100%;
     flex-direction: row;
@@ -46,16 +53,21 @@
     gap: 30px;
 }
 
+/* Button Styles */
 .page-links {
     padding: 10px 20px;  
     color: white;
     background-color: black;
+    border: none;
+    cursor: pointer;
 }
 
 .page-links:hover {
     color: black;
     background-color: transparent;
 }
+
+/* Mobile View Adjustments */
 @media (max-width: 768px) {
     .abt-container {
         width: 100%;
@@ -64,59 +76,72 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: BLACK;
     }
     
-    .abt-heading  {
+    .abt-heading {
         text-align: center;
         font-weight: 900;
-        font-size: 2rem;
-        margin: 20px auto;
+        font-size: 1.5rem; /* Adjusted for better readability on mobile */
+        margin: 15px auto;
+        color: white;
     }
+    
+
     .cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: left;
-        background-color: gainsboro;
+        background-color: transparent;
         height: fit-content;
-        padding: 5px;
-        width: 27%;
-        gap: 15px;
+        width: 100%; /* Make cards full-width on mobile */
+        margin-left: 5px;
+    }
+    .card-info {
+        width: 50%;
+        gap: 10px;
+        background-color: black;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     
     .card-title {
         font-weight: 900;
-        color: black;
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 5px; 
     }
     
     .image {
-        width: 100%;
-        height: 150px;
+        width: 40%;
+        height: 240px; /* Adjusted height for mobile */
     }
-     .cards-text {
-        max-width: 90%;
-        font-size: 0.5rem;
-     }
-     .card-title {
-        font-size: 0.7rem;
-     }
+
+    .cards-text {
+        width:100%;
+        font-size: 0.8rem; /* Adjusted font size for mobile */
+        margin-left: 5px;
+        color: white;
+    }
     
     .card-box {
         width: 100%;
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
+        flex-direction: column; /* Stack cards vertically on mobile */
+        gap: 15px; /* Increased gap for better spacing */
+        background-color: black;
     }
     
     .page-links {
         padding: 2px 4px;  
-        color: white;
-        background-color: black;
-        font-size: 0.5rem;
+        color: orange;
+        background-color: white;
+        font-size: 0.8rem;
+        width: fit-content;
+        padding: 3px 7px ;
+        margin-left: 5px;
     }
     
-    .page-links:hover {
-        color: black;
-        background-color: transparent;
-    }
-  }
+   
+}

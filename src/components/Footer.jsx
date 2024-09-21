@@ -46,11 +46,11 @@ function Footer() {
         </div>
         </div>
         <div className='footer-section'>
-          <h2>Newsletter</h2>
-          <p>Subscribe to my monthly digital magazine to stay updated on my latest work and exclusive offers.</p>
+          <h2>Connect with Me</h2>
+          <p>Have a project in mind. Let's bring it to life</p>
           <form>
             <input type='email' placeholder='Your email' />
-            <button type='submit'>Subscribe</button>
+            <button type='submit'>Send</button>
           </form>
         </div>
       </div>

@@ -1,0 +1,84 @@
+/* General Styling for Testimonials */
+.test-container {
+    display: flex;
+    flex-direction: row; /* Default direction for larger screens */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: orange;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+  
+ 
+  .founder-intro {
+    text-align: left;
+    max-width: 600px;
+    flex: 1;
+  }
+  
+  .founder-intro  {
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  .founder-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+    padding-top: 20px;
+    font-family: var(--font-family);
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+  }
+  
+  .founder-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  .issa-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .test-container {
+      flex-direction: column; /* Changes direction to column on mobile */
+      text-align: center;
+      width: 100%;
+      margin: 30px auto;
+    }
+  
+    .founder-intro h2 {
+      text-align: left; 
+      font-size: 1.4rem;
+      text-decoration: underline ;
+    }
+  
+    .founder-intro p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        color: black;
+        padding-top: 20px;
+        font-family: var(--font-family);
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+      }
+
+    .founder-image {
+      margin-top: 0;
+      width: 70%
+    }
+  }
+  

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './home.css';
 
-import Navbar  from '../components/Navbar';
 import Banner from '../components/Banner';
-import About from '../components/About';
-import Footer from '../components/footer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Testimonials from '../components/Testimonials';
 function Home() {
   const [, setCount] = useState(0)
 
@@ -12,7 +12,7 @@ function Home() {
       <div className='home-container'>
       <Navbar />
       <Banner />
-      <About />
+      <Testimonials />
       <Footer />
       </div>
     

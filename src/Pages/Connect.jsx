@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './connect.css';
 import Navbar from '../components/Navbar';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
+import Projects from '../components/Projects';
 import Services from '../components/Services';
 
 function Connect() {
@@ -10,6 +11,7 @@ function Connect() {
   return (
       <div className='conn-container'>
       <Navbar />
+      <Projects />
       <Services />
       <Footer />
       </div>

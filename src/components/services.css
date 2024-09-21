@@ -1,69 +1,95 @@
-/* services.css */
+/* Services Container */
+.services-container {
+  padding: 30px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
 
-.serv-container {
-    padding: 20px;
-    background-color: black;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+/* Individual Service Section */
+.service-section {
+  margin-bottom: 30px;
+  margin-top: 32px;
+  width: 25vw;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
-  
-  
-  .service-section {
-    margin-bottom: 30px;
-  }
-  
-  .service-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  .service-subsections {
+.service-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Title */
+.service-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+/* Service Description */
+.service-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: white;
+  text-align: left;
+}
+
+.learn-more-btn {
+  padding: 5px 15px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: 700;
+ font-size: 0.8rem;
+}
+.service-icon {
+  color: orange;
+  font-size: 32px;
+  padding: 12px 0;
+}
+
+/* Responsive View for Mobile */
+@media screen and (max-width: 768px) {
+  .services-container {
+    padding: 10px 5px;
+    gap: 10px;
+    margin-top: 10px;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-  }
+    justify-content: flex-start;
+    align-items: flex-start;
   
-  .subsection {
-    background-color: orange;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
+  }
+  .service-section {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .service-section h2 {
+    font-size: 1rem;
     margin-bottom: 10px;
+    border-bottom: 2px solid orange;
+    width: fit-content;
   }
-  
-  .subsection h3 {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-    color: black;
+
+  .service-section p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    width: 100%;
+    text-align: left;
   }
-  
-  .subsection p {
-    font-size: 16px;
-    color:white;
-  }
-  
-  .project-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0;
-  }
-  
-  .project-links li {
-    margin-bottom: 5px;
-  }
-  
-  .project-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 14px;
-  }
-  
-  .project-links a:hover {
-    text-decoration: underline;
-  }
-  
+}

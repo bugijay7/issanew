@@ -1,0 +1,104 @@
+/* Container for contacts section */
+.cont-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff); /* Subtle gradient background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Navbar links for navigation */
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: #ffffff; /* Clean white background for navbar */
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  }
+  
+  /* Links for projects, about me, contacts */
+  .shorts {
+    display: flex;
+    gap: 20px; /* Increased spacing between links */
+  }
+  
+  .shorts p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .shorts a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333; /* Dark text color */
+    font-weight: 600; /* Slightly bold text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
+  }
+  
+  .shorts a:hover {
+    color: #0073e6; /* Modern blue color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Social media icons container */
+  .socials {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
+  }
+  
+  /* Social media icons */
+  .icon {
+    font-size: 30px; /* Larger icons */
+    color: #333; /* Default neutral color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
+  }
+  
+  .icon:hover {
+    color: #0073e6; /* Modern blue color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* Stack items vertically on mobile */
+      padding: 20px;
+      background: linear-gradient(135deg, #611313, #0ea029); /* Reversed gradient for mobile */
+    }
+    
+    .navbar-links {
+      flex-direction: column; /* Stack navbar items vertically on mobile */
+      align-items: center;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 12px; /* Rounded corners for mobile */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+    
+    .shorts {
+      flex-direction: column; /* Stack links vertically on mobile */
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .shorts a {
+      font-size: 1.2rem; /* Larger font size for better readability */
+    }
+    
+    .socials {
+      flex-wrap: wrap; /* Allow wrapping of icons to the next line */
+      justify-content: center; /* Center icons horizontally */
+      gap: 20px;
+    }
+    
+    .icon {
+      font-size: 28px; /* Slightly larger icons on mobile */
+    }
+  }
+  

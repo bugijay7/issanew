@@ -81,6 +81,10 @@
     background-color: #555;
   }
   @media (max-width: 769px) {
+
+    .foot-container {
+      width: 100%;
+    }
     .footer-section h2 {
       color: orange;
       margin-bottom: 10px;

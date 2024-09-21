@@ -1,0 +1,123 @@
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: transparent;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Project Section */
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.project-text {
+  width: 50%;
+  height: 500px;
+  text-align: left;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-text h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.project-text p {
+  font-size: 1.3rem;
+  max-width: 350px;
+  color: orange;
+}
+
+.project-text .see-full-project-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-text .see-full-project-button:hover {
+  background-color: #0056b3;
+}
+
+.project-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 500px;
+  height: 500px;
+  border-radius: 0;
+}
+
+.photoman {
+  margin-top: 20px;
+}
+
+strong {
+  color: white;
+}
+
+/* Mobile View: For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column-reverse; /* Stack text and image vertically */
+    align-items: flex-start;
+  }
+
+  .project-text {
+    width: 80%;
+    height: auto;
+    text-align: center; /* Center align text for mobile */
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .project-text h2 {
+    font-size: 1.3rem; /* Smaller font size */
+    margin-bottom: 15px;
+  }
+
+  .project-text p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+    max-width: 100%; /* Full width text */
+    text-align: left;
+  }
+
+  .project-text .see-full-project-button {
+    font-size: 0.9rem; /* Slightly smaller button */
+    padding: 8px 15px; /* Adjust button padding */
+  }
+
+  .project-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-image img {
+    width: 100%; /* Image takes full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .photoman {
+    margin-top: 10px; /* Reduced margin */
+  }
+}

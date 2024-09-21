@@ -1,114 +1,42 @@
-import { useState } from 'react';
+import React from 'react';
 import './services.css';
+import { FaCamera, FaVideo, FaEdit } from 'react-icons/fa'; // Importing icons
 
-function Services() {
-  const [count, setCount] = useState(0);
-
+const Services = () => {
   return (
-    <div className='serv-container'>
-      <h1>Our Services</h1>
+    <div className="services-container" id='services'>
 
-      <section className='service-section'>
+      {/* Photography Section */}
+      <div className="service-section">
+        <FaCamera className="service-icon" />
         <h2>Photography</h2>
-        <div className='service-subsections'>
-          <div className='subsection'>
-            <h3>Portrait Photography</h3>
-            <p>Capturing the essence of individuals with high-quality portraiture.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-          <div className='subsection'>
-            <h3>Landscape Photography</h3>
-            <p>Capturing breathtaking landscapes and scenic views.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-          <div className='subsection'>
-            <h3>Event Photography</h3>
-            <p>Documenting events with high-quality photography to capture every moment.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <p>
+          From weddings to portraits, we capture every moment with creativity and precision.
+        </p>
+        <button className="learn-more-btn">Learn More</button>
+      </div>
 
-      <section className='service-section'>
+      {/* Videography Section */}
+      <div className="service-section">
+        <FaVideo className="service-icon" />
         <h2>Videography</h2>
-        <div className='service-subsections'>
-          <div className='subsection'>
-            <h3>Event Videography</h3>
-            <p>Filming events with a focus on capturing memorable moments.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-          <div className='subsection'>
-            <h3>Corporate Videos</h3>
-            <p>Creating professional videos for corporate purposes and branding.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-          <div className='subsection'>
-            <h3>Music Videos</h3>
-            <p>Producing creative and visually compelling music videos.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <p>
+          Cinematic experiences for your special occasions, crafted with expertise.
+        </p>
+        <button className="learn-more-btn">Learn More</button>
+      </div>
 
-      <section className='service-section'>
+      {/* Video Editing Section */}
+      <div className="service-section">
+        <FaEdit className="service-icon" />
         <h2>Video Editing</h2>
-        <div className='service-subsections'>
-          <div className='subsection'>
-            <h3>On-demand Editing</h3>
-            <p>Enhancing and assembling film footage to create a polished final product.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-         
-          <div className='subsection'>
-            <h3>Documentary Editing</h3>
-            <p>Editing documentaries to present compelling and informative stories.</p>
-            <ul className='project-links'>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 1</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 2</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 3</a></li>
-              <li><a href='#' target='_blank' rel='noopener noreferrer'>Project 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
+        <p>
+          Professional editing to make your videos polished and unforgettable.
+        </p>
+        <button className="learn-more-btn">Learn More</button>
+      </div>
     </div>
   );
-}
+};
 
 export default Services;

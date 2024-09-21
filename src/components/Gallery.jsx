@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './gallery.css';
 
-
 import nat1 from '../assets/images/nat1.jpg';
 import nat2 from '../assets/images/nat2.jpg';
 import nat3 from '../assets/images/nat3.jpg';
@@ -30,7 +29,6 @@ import prod7 from '../assets/images/prod7.jpg';
 import prod8 from '../assets/images/prod8.jpg';
 import Navbar from './Navbar';
 
-
 function Gallery() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
@@ -49,11 +47,25 @@ function Gallery() {
     setCurrentImage(null);
   };
 
+  const nextImage = (imageArray) => {
+    const currentIndex = imageArray.indexOf(currentImage);
+    const nextIndex = (currentIndex + 1) % imageArray.length;
+    setCurrentImage(imageArray[nextIndex]);
+  };
+
+  const previousImage = (imageArray) => {
+    const currentIndex = imageArray.indexOf(currentImage);
+    const prevIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+    setCurrentImage(imageArray[prevIndex]);
+  };
+
   return (
-    <div className='cont-container'>
-    <Navbar />
+    <div>
+      <Navbar />
+      <div className='gall-container'>
+      {/* Nature Photography Album */}
       <div className='album'>
-        <h2>Nature Photography</h2>
+        <h2 className='album-title'>Nature Photography</h2>
         <div className='gallery-grid'>
           {natureImages.map((img, index) => (
             <div key={index} className='gallery-item'>
@@ -68,9 +80,10 @@ function Gallery() {
           ))}
         </div>
       </div>
-
+    
+      {/* Wedding Photography Album */}
       <div className='album'>
-        <h2>Wedding Photography</h2>
+        <h2 className='album-title'>Wedding Photography</h2>
         <div className='gallery-grid'>
           {weddingImages.map((img, index) => (
             <div key={index} className='gallery-item'>
@@ -85,9 +98,10 @@ function Gallery() {
           ))}
         </div>
       </div>
-
+    
+      {/* Portrait Photography Album */}
       <div className='album'>
-        <h2>Product Photography</h2>
+        <h2 className='album-title'>Portrait Photography</h2>
         <div className='gallery-grid'>
           {productImages.map((img, index) => (
             <div key={index} className='gallery-item'>
@@ -102,12 +116,8 @@ function Gallery() {
           ))}
         </div>
       </div>
-
-      {lightboxOpen && (
-        <div className='lightbox' onClick={closeLightbox}>
-          <img src={currentImage} alt="Enlarged view" className='lightbox-img' />
-        </div>
-      )}
+    </div>
+    
     </div>
   );
 }
