@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import './testimonials.css';
+=======
+import { useState } from 'react'
+>>>>>>> bfbb022f8e3d50be71010851a85c6399ac1149a8
 
 import prod1 from '../assets/images/prod3.jpg'; 
 

@@ -1,6 +1,6 @@
-import { useLocation } from 'react-router-dom';
-import Gallery from '../components/Gallery'; 
-import Contacts from '../components/Contacts';
+import { useState } from 'react'
+import './portfolio.css';
+import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 
 function Portfolio() {

@@ -6,8 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import About from '../components/About';
-import Services from '../components/Services';
-import Contacts from '../components/Contacts';
+import Footer from '../components/footer';
 function Home() {
   const [, setCount] = useState(0)
 

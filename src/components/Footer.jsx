@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './footer.css';
 
 function Footer() {
-  const [, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div className='foot-container'>
@@ -17,13 +17,14 @@ function Footer() {
         <div className='touch'>
         <div className='footer-section'>
           <h2>Find Me</h2>
-          <p>Email: johndoe@example.com</p>
-          <p>Phone: +123-456-7890</p>
+          <p>Email: faulupics@gmail.com</p>
+          <p>Phone: +254799569159</p>
+          <p>Phone: +97433665389</p>
         </div>
         <div className='footer-section'>
           <h2>Follow-Me</h2>
           <ul className='social-links'>
-            <li><a href='https://www.instagram.com/johndoe' target='_blank' rel='noopener noreferrer'>Instagram
+            <li><a href='https://www.instagram.com/issa_faulu/' target='_blank' rel='noopener noreferrer'>Instagram
          </a>
             </li>
             <li>
