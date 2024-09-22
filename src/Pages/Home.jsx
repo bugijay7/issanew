@@ -3,7 +3,7 @@ import './home.css';
 
 import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import About from '../components/About';
 import Services from '../components/Services';  // Make sure to import this
