@@ -1,8 +1,9 @@
 .foot-container {
-    background-color: black;
+    background-color: transparent;
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
   }
   
   .footer-content {
@@ -13,8 +14,8 @@
   }
   
   .footer-section {
-    margin-bottom: 20px;
-    text-align: left;
+    display: block;
+    margin: auto 10px;
   }
   
   .footer-section h2 {
@@ -26,6 +27,8 @@
   .footer-section a {
     color: #dcdcdc;
     text-decoration: none;
+    max-width: 800px;
+    margin: auto;
   }
   
   .footer-section a:hover {
@@ -36,7 +39,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 30px auto;
-    gap: 150px;
+    gap: 100px;
   }
   
   .social-links {
@@ -45,8 +48,8 @@
   }
   
   .social-links li {
-    display: inline;
-    margin: 0 10px;
+    display: block;
+    margin: 10px 10px;
   }
   
   .social-links a {
@@ -96,6 +99,7 @@
       color: #dcdcdc;
       text-decoration: none;
       font-size: 0.5rem;
+      max-width: 70%;
     }
     
     .touch {
@@ -103,7 +107,7 @@
       justify-content: center;
       align-items: flex-start;
       gap: 30px;
-      width: 100%;
+      width: 90%;
     }
     .social-links  li {
       display: flex;

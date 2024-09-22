@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import Gallery from '../components/Gallery'; 
+import Contacts from '../components/Contacts';
 import Footer from '../components/Footer';
 
 function Portfolio() {
@@ -22,6 +23,7 @@ function Portfolio() {
   return (
     <div>
       <Gallery images={galleryImages} />
+      <Contacts />
       <Footer />
     </div>
   );

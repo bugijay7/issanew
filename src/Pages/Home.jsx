@@ -5,6 +5,9 @@ import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
+import About from '../components/About';
+import Services from '../components/Services';
+import Contacts from '../components/Contacts';
 function Home() {
   const [, setCount] = useState(0)
 
@@ -12,7 +15,10 @@ function Home() {
       <div className='home-container'>
       <Navbar />
       <Banner />
+      <About />
+      <Services />
       <Testimonials />
+      <Contacts />
       <Footer />
       </div>
     

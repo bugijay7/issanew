@@ -1,11 +1,15 @@
 /* About Section Container */
 .abt-container {
-    width: 100%;
+    max-width: 1200px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 10px;
 }
 
 /* Heading */
@@ -14,6 +18,7 @@
     font-weight: 900;
     font-size: 2rem;
     margin: 20px auto;
+    color: orange;
 }
 
 /* Card Styles */
@@ -21,7 +26,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: gainsboro;
+    background-color: orange;
     height: fit-content;
     padding: 10px;
     width: 20%;
@@ -42,6 +47,7 @@
 .cards-text {
     max-width: 90%;
     font-size: 1rem;
+    padding: 10px 0;
 }
 
 /* Card Box Styles */
@@ -51,6 +57,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
 }
 
 /* Button Styles */
@@ -77,6 +84,7 @@
         justify-content: center;
         align-items: center;
         background-color: BLACK;
+        width: 100%
     }
     
     .abt-heading {
@@ -104,7 +112,7 @@
         height: 240px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     
     .card-title {
@@ -135,8 +143,8 @@
     
     .page-links {
         padding: 2px 4px;  
-        color: orange;
-        background-color: white;
+        background-color: orange;
+        color: white;
         font-size: 0.8rem;
         width: fit-content;
         padding: 3px 7px ;

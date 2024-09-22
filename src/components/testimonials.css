@@ -56,24 +56,25 @@
     .test-container {
       flex-direction: column; /* Changes direction to column on mobile */
       text-align: center;
-      width: 100%;
       margin: 30px auto;
     }
   
     .founder-intro h2 {
       text-align: left; 
-      font-size: 1.4rem;
+      font-size: 1rem;
       text-decoration: underline ;
     }
   
     .founder-intro p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         line-height: 1.6;
         color: black;
         padding-top: 20px;
         font-family: var(--font-family);
         margin-bottom: 0.75rem;
         font-weight: 500;
+        max-width: 80%;
+        margin: auto;
       }
 
     .founder-image {

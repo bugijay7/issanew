@@ -3,20 +3,19 @@
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background: linear-gradient(135deg, #f0f0f0, #ffffff); /* Subtle gradient background */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: yellow;
   }
   
   /* Navbar links for navigation */
   .navbar-links {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 60%;
+    margin: auto;
     align-items: center;
-    background: #ffffff; /* Clean white background for navbar */
+    background: transparent; /* Clean white background for navbar */
     padding: 10px 20px; /* Padding for spacing */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
@@ -31,12 +30,15 @@
   .shorts p {
     margin: 0;
     padding: 0;
+    
+
   }
   
   .shorts a {
     text-decoration: none;
     font-size: 1rem;
-    color: #333; /* Dark text color */
+    font-family: var(--font-family);
+    color: yellow;
     font-weight: 600; /* Slightly bold text */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
   }
@@ -55,7 +57,7 @@
   /* Social media icons */
   .icon {
     font-size: 30px; /* Larger icons */
-    color: #333; /* Default neutral color */
+    color: yellowgreen; /* Default neutral color */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
   }
   
@@ -68,37 +70,40 @@
   @media (max-width: 768px) {
     .contact-container {
       flex-direction: column; /* Stack items vertically on mobile */
-      padding: 20px;
-      background: linear-gradient(135deg, #611313, #0ea029); /* Reversed gradient for mobile */
+      margin: 10px auto;
     }
     
     .navbar-links {
       flex-direction: column; /* Stack navbar items vertically on mobile */
       align-items: center;
-      padding: 15px;
-      background: #ffffff;
+      width: 100%;
+      
+      padding: 0;
+      background: transparent;
       border-radius: 12px; /* Rounded corners for mobile */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     }
     
     .shorts {
-      flex-direction: column; /* Stack links vertically on mobile */
       gap: 15px;
       margin-bottom: 20px;
     }
     
     .shorts a {
-      font-size: 1.2rem; /* Larger font size for better readability */
+      font-size: 0.8rem; /* Larger font size for better readability */
+      color: white;
     }
     
     .socials {
       flex-wrap: wrap; /* Allow wrapping of icons to the next line */
       justify-content: center; /* Center icons horizontally */
       gap: 20px;
+      padding-bottom: 10px;
     }
     
     .icon {
       font-size: 28px; /* Slightly larger icons on mobile */
+      color: white;
     }
   }
   

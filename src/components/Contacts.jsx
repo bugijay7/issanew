@@ -10,7 +10,7 @@ function Contacts() {
       <div className='navbar-links'>
         <div className='shorts'>
           <p><a href='#'>PROJECTS</a></p>
-          <p><a href='#'>ABOUT ME</a></p>
+          <p><a href='#about'>ABOUT ME</a></p>
           <p><a href='#'>CONTACTS</a></p>
         </div>
 
