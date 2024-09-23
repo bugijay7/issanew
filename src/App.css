@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
 .app-container {
     background-image: url(../src/assets/appback1.jpg);
