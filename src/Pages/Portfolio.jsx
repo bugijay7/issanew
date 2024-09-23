@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom'; // Add this import
 import './portfolio.css';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
+import Contacts from '../components/Contacts'; // Ensure Contacts is imported
 
 function Portfolio() {
   const location = useLocation();
@@ -13,7 +15,7 @@ function Portfolio() {
   // Based on category, determine which gallery to show
   let galleryImages;
   if (category === 'wedding') {
-    galleryImages = 'weddingImages'; // You can replace this with the actual wedding images array
+    galleryImages = 'weddingImages'; // Replace this with the actual wedding images array
   } else if (category === 'nature') {
     galleryImages = 'natureImages'; // Replace with the actual nature images array
   } else if (category === 'portrait') {
