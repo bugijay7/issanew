@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom'; // Add this import
 import './portfolio.css';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import Contacts from '../components/Contacts'; // Ensure Contacts is imported
 
 function Portfolio() {
-  const location = useLocation();
   
   // Get query params (for example: ?category=wedding)
   const searchParams = new URLSearchParams(location.search);
