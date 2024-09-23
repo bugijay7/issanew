@@ -4,7 +4,7 @@
     flex-direction: row; /* Default direction for larger screens */
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px auto;
     background-color: orange;
     color: #333;
     max-width: 1200px;
@@ -16,7 +16,7 @@
  
   .founder-intro {
     text-align: left;
-    max-width: 600px;
+    max-width: 70%;
     flex: 1;
   }
   
