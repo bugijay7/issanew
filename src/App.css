@@ -14,7 +14,7 @@ h1 {
 
 @media (max-width: 768px) {
     .app-container {
-        width: 100vw;
+        width: 100%;
         background-color: black;
     }
 }
