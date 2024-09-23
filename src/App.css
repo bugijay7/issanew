@@ -6,6 +6,7 @@
 .app-container {
     background-image: url(../src/assets/appback1.jpg);
     background-size: cover;
+    width: 100vw;
 }
 h1 {
     color: black;
@@ -14,7 +15,7 @@ h1 {
 
 @media (max-width: 768px) {
     .app-container {
-        width: 100%;
+        width: 100vw;
         background-color: black;
     }
 }
