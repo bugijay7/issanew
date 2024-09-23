@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom'; // Ensure this is imported
 import './portfolio.css';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import Contacts from '../components/Contacts'; // Ensure Contacts is imported
 
 function Portfolio() {
-  
+  const location = useLocation(); // Get location
+
   // Get query params (for example: ?category=wedding)
   const searchParams = new URLSearchParams(location.search);
   const category = searchParams.get('category');
@@ -13,11 +15,11 @@ function Portfolio() {
   // Based on category, determine which gallery to show
   let galleryImages;
   if (category === 'wedding') {
-    galleryImages = 'weddingImages'; // Replace this with the actual wedding images array
+    galleryImages = weddingImages; // Ensure this is defined
   } else if (category === 'nature') {
-    galleryImages = 'natureImages'; // Replace with the actual nature images array
+    galleryImages = natureImages; // Ensure this is defined
   } else if (category === 'portrait') {
-    galleryImages = 'productImages'; // Replace with the actual product images array
+    galleryImages = productImages; // Ensure this is defined
   }
 
   return (
