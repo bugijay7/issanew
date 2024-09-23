@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './testimonials.css';
-
 import prod1 from '../assets/images/prod3.jpg'; 
 
 function Testimonials() {
