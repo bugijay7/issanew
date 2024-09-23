@@ -2,13 +2,13 @@
 .gall-container {
   width: 100vw;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Arial', sans-serif;
   color: #333;
   background: wheat;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   top: 70px;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 0;
 }
 
@@ -27,7 +27,7 @@
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 20px; /* Add spacing between the grid items */
+  gap: 10px; /* Add spacing between the grid items */
 }
 
 /* Individual gallery item */
@@ -37,7 +37,7 @@
   background-color: white;
   border: 15px solid black;
   margin: auto;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -47,7 +47,7 @@
 
 /* Image styling */
 .gallery-img {
-  width: 400px;
+  width: 350px;
   height: 500px;
   object-fit: cover;
   display: block;
@@ -108,7 +108,7 @@
   }
 
   .gallery-item {
-    padding: 15px; /* Reduce padding for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
     background-color: white;
     border: 5px solid black;
   }
