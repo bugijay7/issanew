@@ -13,7 +13,6 @@ function About() {
       <div>
         <div className='card-box'>
 
-          {/* Weddings Card */}
           <div className='cards'>
             <img className='image' src={weddings} alt="Weddings" />
             <div className='card-info'>
@@ -27,7 +26,6 @@ function About() {
             </div>
           </div>
 
-          {/* Nature Card */}
           <div className='cards'>
             <img className='image' src={nature} alt="Nature" />
             <div className='card-info'>
@@ -41,7 +39,6 @@ function About() {
             </div>
           </div>
 
-          {/* Portraits Card */}
           <div className='cards'>
             <img className='image' src={portraits} alt="Portraits" />
             <div className='card-info'>
