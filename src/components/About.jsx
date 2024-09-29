@@ -21,7 +21,7 @@ function About() {
               <p className='cards-text'>
                 Capturing the magic of special days with timeless elegance...
               </p>
-              <button className='page-links' onClick={() => navigate('/portfolio?category=wedding')}>
+              <button className='page-links' onClick={() => navigate('/portfolio')}>
                 SEE MORE
               </button>
             </div>
@@ -35,7 +35,7 @@ function About() {
               <p className='cards-text'>
                 Embrace the beauty of the natural world through our lens...
               </p>
-              <button className='page-links' onClick={() => navigate('/portfolio?category=nature')}>
+              <button className='page-links' onClick={() => navigate('/portfolio')}>
                 SEE MORE
               </button>
             </div>
@@ -49,7 +49,7 @@ function About() {
               <p className='cards-text'>
                 Bringing out the personality and emotion of every individual...
               </p>
-              <button className='page-links' onClick={() => navigate('/portfolio?category=portrait')}>
+              <button className='page-links' onClick={() => navigate('/portfolio')}>
                 SEE MORE
               </button>
             </div>
